@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "rus");
+	double a, b, S, d, L, x, y, z, P, sum, dif, sumM, difM, mult, multM;
+	const double pi = 3.14;
+    cout << "1) Введите числа a и b для вычисления площади и периметра прямоугольника " << endl;
+	cin >> a >> b; 
+	S = a * b;
+	P = 2 * (a + b);
+	cout << "Площадь равна " << S << "; Периметр равен " << P << endl;
+	cout << "2) Введите диаметр окружности для вычилсения ее длины " << endl;
+	cin >> d;
+	L = pi * d;
+	cout << "Длина равна " << L << endl;
+	x = (a + b) / 2;
+	cout << "3) Среднее арефмитическое a и b равно " << x << endl;
+	cout << "4, 5) Введите два ненулевых числа " << endl;
+	cin >> z >> y;
+	sum = (z * z) + (y * y);
+	dif = (z * z) - (y * y);
+	mult = (z * z) * (y * y);
+	cout << " Сумма квадратов равна " << sum << "; Разность квадратов равна " << dif << "; Произведение квадратов равно " << mult << endl;
+	sumM = abs(z) + abs(y);
+	difM = abs(z) - abs(y);
+	multM = abs(z) * abs(y);
+	cout << " Сумма модулей равна  " <<  sumM << "; Разность модулей равен " << difM << "; Произведение модулей равно  " << multM << endl;
+
+}
